@@ -1,13 +1,15 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
+import React from 'react';
+
+const EmbedWebsite = () => {
+  return (
+    <div style={{ height: '100vh', width: '100%' }}>
+      <iframe
+        src="https://dien-bien-phu-chien-than-ejcacz6.gamma.site/"
+        style={{ border: 'none', height: '100%', width: '100%' }}
+        title="Embedded Website"
+      ></iframe>
+    </div>
+  );
 };
 
-export default reportWebVitals;
+export default EmbedWebsite;
